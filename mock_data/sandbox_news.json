@@ -1,0 +1,252 @@
+{
+  "as_of": "2026-11-09T13:53:14.587Z",
+  "query": {
+    "q": null,
+    "tickers": ["ORCL"],
+    "min_relevance": 0.8,
+    "from": "2026-10-23",
+    "select": [
+      "id",
+      "time_published",
+      "title",
+      "summary",
+      "source",
+      "source_domain",
+      "category",
+      "topics",
+      "url",
+      "overall_sentiment_score",
+      "overall_sentiment_label",
+      "ticker_data -> 'ORCL' ->> 'rel' AS relevance"
+    ],
+    "group_by": null,
+    "having": null,
+    "order": "time_published",
+    "dir": "desc",
+    "limit": 10,
+    "surface": "sandbox"
+  },
+  "count": 10,
+  "next_cursor": "eyJhZnRlcl9vcmRlcl92YWx1ZSI6IjIwMjYtMTEtMDZUMTM6Mjg6MDAuMDAwWiIsImFmdGVyX2lkIjo0NzQwMjQ5fQ",
+  "results": [
+    {
+      "id": 4821468,
+      "time_published": "2026-11-09T11:41:54.000Z",
+      "title": "Oracle's no-cost OPERA Cloud AI changes the ROI question for hotels",
+      "summary": "Oracle is now including its OPERA Cloud Assistant at no extra cost, prompting hotels to shift their focus from purchase ROI to workflow, ownership, and success metrics for AI implementation. While 84% of hotel workers report AI lightening their workload, only 15% see improvements in frontline guest-facing roles, highlighting a gap in AI's current impact. The article emphasizes that clean, consistent property data is crucial for large language models to effectively assist hotels and that formal AI policies are lagging behind adoption rates.",
+      "source": "MarketScale",
+      "source_domain": "MarketScale",
+      "category": "General",
+      "topics": [
+        {
+          "topic": "technology",
+          "relevance_score": "0.945450"
+        },
+        {
+          "topic": "retail_wholesale",
+          "relevance_score": "0.709648"
+        }
+      ],
+      "url": "https://www.marketscale.com/industries/hospitality/oracles-no-cost-opera-cloud-ai-changes-the-roi-question-for-hotels",
+      "overall_sentiment_score": 0.2307,
+      "overall_sentiment_label": "Somewhat-Bullish",
+      "relevance": "1"
+    },
+    {
+      "id": 4788404,
+      "time_published": "2026-11-07T18:16:15.000Z",
+      "title": "Oracle Stock Nears Death Cross as Microsoft Deal Unwinding Points to More Risks",
+      "summary": "Oracle (NYSE: ORCL) stock has fallen to its lowest level since February 2024, down 68% from its all-time high, amid reports that Microsoft (NASDAQ: MSFT) is winding down its AI computing rental agreement due to Oracle supplying older-generation chips. The company also faces concerns about a new $20 billion cash sale and soaring debt, contributing to technical indicators suggesting further downside risk, including a potential \"death cross\" and a head-and-shoulders pattern.",
+      "source": "Benzinga",
+      "source_domain": "Benzinga",
+      "category": "General",
+      "topics": [
+        {
+          "topic": "financial_markets",
+          "relevance_score": "0.941055"
+        },
+        {
+          "topic": "technology",
+          "relevance_score": "0.834877"
+        },
+        {
+          "topic": "earnings",
+          "relevance_score": "0.707270"
+        }
+      ],
+      "url": "https://www.benzinga.com/markets/equities/26/11/63018136/oracle-stock-nears-death-cross-as-microsoft-deal-unwinding-points-to-more-risks",
+      "overall_sentiment_score": -0.5565,
+      "overall_sentiment_label": "Bearish",
+      "relevance": "1"
+    },
+    {
+      "id": 4786566,
+      "time_published": "2026-11-07T16:31:00.000Z",
+      "title": "AI Stocks Are Falling; Bitcoin Is Holding Ground. Here's What Could Come Next.",
+      "summary": "While AI-related stocks like Intel, Oracle, Micron Technology, and SanDisk have declined 20-62% since June, Bitcoin has remained relatively resilient, holding 33.7% above bear market lows despite facing multiple headwinds including geopolitical uncertainty, Fed rate concerns, a major crypto exchange hack, and upcoming Democratic control of Congress. Bitcoin's ability to resist selling pressure amid bad news suggests potential for price appreciation once market headlines ease.",
+      "source": "The Motley Fool",
+      "source_domain": "fool.com",
+      "category": null,
+      "topics": [],
+      "url": "https://www.fool.com/investing/2026/11/07/ai-stocks-are-falling-bitcoin-is-holding-ground/?source=iedfolrf0000001",
+      "overall_sentiment_score": null,
+      "overall_sentiment_label": null,
+      "relevance": "0.8"
+    },
+    {
+      "id": 4761747,
+      "time_published": "2026-11-07T01:20:14.000Z",
+      "title": "Cerebras Systems vs. Nebius: Which Artificial Intelligence Stock Is a Better Buy Going into 2027?",
+      "summary": "The article compares two AI infrastructure companies: Cerebras Systems, which specializes in wafer-scale chips for AI training, and Nebius Group, which provides a unified AI cloud platform. While both companies show strong revenue growth, Cerebras achieved a 75.7% revenue increase with a 46.6% net margin, while Nebius saw explosive 479% growth but with a lower 15.6% net margin. The author recommends Cerebras for 2027, citing its proprietary wafer-scale technology advantage, successful partnerships with OpenAI and Oracle, and superior gross margins despite higher valuation multiples.",
+      "source": "The Motley Fool",
+      "source_domain": "fool.com",
+      "category": null,
+      "topics": [],
+      "url": "https://www.fool.com/coverage/better-buy/2026/11/06/cerebras-systems-vs-nebius-which-artificial-intelligence-stock-is-a-better-buy-going-into-2027/?source=iedfolrf0000001",
+      "overall_sentiment_score": null,
+      "overall_sentiment_label": null,
+      "relevance": "0.8"
+    },
+    {
+      "id": 4757832,
+      "time_published": "2026-11-06T23:41:02.000Z",
+      "title": "Oracle Just Sold $10 Billion of Stock at $116 a Share. Is the Stock a Buy at That Price?",
+      "summary": "Oracle raised its full $20 billion capital commitment (split between $10B in stock at $116/share and $10B in bonds) in just five days, adding ~3% dilution to shareholders. While the stock price appears reasonable at 10x fiscal 2028 earnings for a ~30% revenue growth company, Oracle faces significant headwinds: capital spending of $28.5B in Q1 far exceeds the $20B raise, debt stands at $125B with rising interest costs, and positive free cash flow isn't expected until late fiscal 2028.",
+      "source": "The Motley Fool",
+      "source_domain": "fool.com",
+      "category": null,
+      "topics": [],
+      "url": "https://www.fool.com/investing/2026/11/06/oracle-just-sold-usd10-billion-of-stock-at-usd116-a-share-is-the-stock-a-buy-at-that-price/?source=iedfolrf0000001",
+      "overall_sentiment_score": null,
+      "overall_sentiment_label": null,
+      "relevance": "1"
+    },
+    {
+      "id": 4755308,
+      "time_published": "2026-11-06T20:47:12.000Z",
+      "title": "Oracle\u2019s AI Trouble Is Wall Street\u2019s New Headache: 2 ETFs to Watch as Data Center Fears Grow",
+      "summary": "Oracle's shares dipped after reports that Microsoft is discontinuing its lease of AI computing capacity from the company, citing outdated Nvidia chips. This development raises concerns for investors in cloud computing and data center infrastructure ETFs. Two specific ETFs, the First Trust Cloud Computing ETF (SKYY) and the Pacer Data & Infrastructure Real Estate ETF (SRVR), are highlighted for their exposure to companies potentially affected by these shifts in AI infrastructure spending and capacity expectations.",
+      "source": "TradingView",
+      "source_domain": "TradingView",
+      "category": "General",
+      "topics": [
+        {
+          "topic": "technology",
+          "relevance_score": "0.902533"
+        },
+        {
+          "topic": "financial_markets",
+          "relevance_score": "0.834139"
+        }
+      ],
+      "url": "https://www.tradingview.com/news/benzinga:057581e19094b:0-oracle-s-ai-trouble-is-wall-street-s-new-headache-2-etfs-to-watch-as-data-center-fears-grow/",
+      "overall_sentiment_score": -0.1276,
+      "overall_sentiment_label": "Neutral",
+      "relevance": "1"
+    },
+    {
+      "id": 4752981,
+      "time_published": "2026-11-06T20:32:48.000Z",
+      "title": "Oracle recognized as a Leader in the 2026 Gartner\u00ae Magic Quadrant\u2122 for CRM Customer Engagement Center",
+      "summary": "Oracle has been named a Leader in the 2026 Gartner\u00ae Magic Quadrant\u2122 for CRM Customer Engagement Center for its advancements in Oracle Fusion Service. The company's strategy focuses on using AI to execute service outcomes, providing enterprise context, and leveraging human expertise to resolve customer needs. New agentic applications like Service Execution Workspace and Service Operations Workspace aim to streamline service processes, improve resolution, and enable proactive customer support.",
+      "source": "Oracle Blogs",
+      "source_domain": "Oracle Blogs",
+      "category": "General",
+      "topics": [
+        {
+          "topic": "technology",
+          "relevance_score": "0.902241"
+        }
+      ],
+      "url": "https://blogs.oracle.com/cx/oracle-recognized-as-a-leader-in-the-2026-gartner-magic-quadrant-for-crm-customer-engagement-center",
+      "overall_sentiment_score": 0.3699,
+      "overall_sentiment_label": "Bullish",
+      "relevance": "1"
+    },
+    {
+      "id": 4777265,
+      "time_published": "2026-11-06T19:12:34.000Z",
+      "title": "Oracle troubles aggravate as Microsoft scraps 3-year-old deal; comes as software giant rethinks cloud partnerships; renting computing from Oracle reportedly became less useful as ...",
+      "summary": "Microsoft is ending its AI computing partnership with Oracle by not renewing a 2023 agreement, reportedly due to Oracle's older Nvidia chips no longer meeting Microsoft's needs. This move is part of Microsoft's broader review of over $80 billion in cloud computing commitments with various providers as it seeks to reduce escalating expenses and operational delays. The decision adds to Oracle's financial challenges, which include negative free cash flow from AI data center investments and a significant drop in its stock price.",
+      "source": "The Times of India",
+      "source_domain": "The Times of India",
+      "category": "General",
+      "topics": [
+        {
+          "topic": "technology",
+          "relevance_score": "0.924494"
+        },
+        {
+          "topic": "earnings",
+          "relevance_score": "0.804079"
+        },
+        {
+          "topic": "financial_markets",
+          "relevance_score": "0.728262"
+        }
+      ],
+      "url": "https://timesofindia.indiatimes.com/technology/tech-news/oracle-troubles-aggravate-as-microsoft-scraps-3-year-old-deal-comes-as-software-giant-rethinks-cloud-partnerships-renting-computing-from-oracle-reportedly-became-less-useful-as-/articleshow/135619531.cms",
+      "overall_sentiment_score": -0.2487,
+      "overall_sentiment_label": "Somewhat-Bearish",
+      "relevance": "1"
+    },
+    {
+      "id": 4747581,
+      "time_published": "2026-11-06T18:45:32.000Z",
+      "title": "Oracle Stock Slides as Microsoft Reportedly Pulls Back From AI Computing Deal",
+      "summary": "Oracle shares experienced a decline following a report that Microsoft is reducing its commitment to lease AI computing power from the company. The pullback is part of a broader review of cloud deals by Microsoft, with sources indicating that the older Nvidia chips used in the Oracle deal no longer meet Microsoft's needs. Oracle disputes this implication, stating that customer demand for its AI infrastructure, including earlier chip generations, remains strong.",
+      "source": "Benzinga",
+      "source_domain": "Benzinga",
+      "category": "General",
+      "topics": [
+        {
+          "topic": "financial_markets",
+          "relevance_score": "0.944760"
+        },
+        {
+          "topic": "technology",
+          "relevance_score": "0.829841"
+        }
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63003689/oracle-stock-slides-as-microsoft-reportedly-pulls-back-from-ai-computing-deal",
+      "overall_sentiment_score": -0.2386,
+      "overall_sentiment_label": "Somewhat-Bearish",
+      "relevance": "1"
+    },
+    {
+      "id": 4740249,
+      "time_published": "2026-11-06T13:28:00.000Z",
+      "title": "ING puts $500 million of data center loans up for auction, including a slice of OpenAI's Stargate site",
+      "summary": "ING is auctioning off about $500 million in data center loans, including a $25 million loan related to OpenAI and Oracle's Stargate campus in New Mexico. This move follows a significant selloff in AI stocks and comes as other major banks are also exploring ways to reduce their exposure to data center construction lending. Oracle's interest expenses have notably increased, highlighting the substantial leverage supporting the ongoing AI infrastructure build-out.",
+      "source": "MLQ.ai",
+      "source_domain": "MLQ.ai",
+      "category": "General",
+      "topics": [
+        {
+          "topic": "finance",
+          "relevance_score": "0.935438"
+        },
+        {
+          "topic": "real_estate",
+          "relevance_score": "0.836086"
+        },
+        {
+          "topic": "technology",
+          "relevance_score": "0.717583"
+        },
+        {
+          "topic": "financial_markets",
+          "relevance_score": "0.609591"
+        },
+        {
+          "topic": "earnings",
+          "relevance_score": "0.611506"
+        }
+      ],
+      "url": "https://mlq.ai/news/ing-puts-500-million-of-data-center-loans-up-for-auction-including-a-slice-of-openais-stargate-site/",
+      "overall_sentiment_score": -0.0815,
+      "overall_sentiment_label": "Neutral",
+      "relevance": "0.876875"
+    }
+  ]
+}
