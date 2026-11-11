@@ -1,0 +1,401 @@
+{
+  "company_profile": {
+    "ticker": "ORCL",
+    "name": "Oracle Corp",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure",
+    "country": "us",
+    "exchange": "NYSE",
+    "asset_type": "CS",
+    "market_cap": 384179573968.0
+  },
+  "fundamentals": {
+    "revenue_ttm": 71776002000.0,
+    "revenue_growth_yoy_pct": 21.62,
+    "eps": 1.58,
+    "diluted_eps_ttm": 6.58,
+    "earnings_growth_yoy_pct": 54.50000000000001,
+    "gross_profit_ttm": 45906002000.0,
+    "gross_margin": 0.6003,
+    "operating_income_loss": 6728000000.0,
+    "operating_margin_ttm": 0.356,
+    "net_income_loss": 4760000000.0,
+    "profit_margin_ttm": 0.264,
+    "free_cash_flow": -28720000000.0
+  },
+  "financial_health": {
+    "total_debt": 125337000000.0,
+    "cash_and_short_term_investments": 37077000000.0,
+    "assets": 303259000000.0,
+    "liabilities": 236063000000.0,
+    "equity": 67196000000.0,
+    "current_ratio": 1.1708,
+    "debt_to_equity": 3.5131
+  },
+  "valuation": {
+    "price": 123.225,
+    "price_source": "fair_value",
+    "enterprise_value": 462438246830.0,
+    "pe_ratio": 19.93,
+    "forward_pe": 14.18,
+    "peg_ratio": 0.43,
+    "price_to_sales": 5.2,
+    "ev_to_ebitda": 13.04
+  },
+  "technical_analysis": {
+    "change_1d_pct": 4.4457,
+    "change_1w_pct": -6.5179,
+    "change_1m_pct": -14.1386,
+    "change_3m_pct": -23.0395,
+    "change_6m_pct": -36.8597,
+    "change_1y_pct": -50.6959,
+    "sma_20": 126.85,
+    "sma_50": 137.51,
+    "sma_200": 154.5344,
+    "from_sma_50_pct": -10.3883,
+    "from_sma_200_pct": -20.2604,
+    "rsi_14": 45.4158,
+    "macd_histogram": -0.484141,
+    "adx_14": 15.261448847673346,
+    "atr_pct": 6.4246,
+    "bollinger_width": 0.2295,
+    "relative_volume": 0.0079,
+    "avg_volume_30d": 37474400.0,
+    "high_52w": 250.25,
+    "low_52w": 109.21,
+    "from_52w_high_pct": -50.7592,
+    "position_in_52w_range_pct": 9.9369
+  },
+  "earnings_and_analysts": {
+    "earnings_date": "2026-12-09T00:00:00.000Z",
+    "last_earnings_date": "2026-09-10T00:00:00.000Z",
+    "last_reported_eps": 1.63,
+    "last_eps_estimate": 1.39,
+    "last_earnings_surprise_pct": 17.2662,
+    "next_eps_estimate": 1.89,
+    "next_revenue_estimate": 21325430780.0,
+    "eps_estimate_revision_up_30d": 1,
+    "eps_estimate_revision_down_30d": 3,
+    "analyst_consensus_rating": "buy",
+    "analyst_consensus_target_price": 243.65,
+    "analyst_target_upside_pct": 97.73
+  },
+  "ownership_and_dividends": {
+    "shares_outstanding": 3023736000.0,
+    "float_shares": 1862621375.0,
+    "short_interest": 46405138.0,
+    "short_float_pct": 2.4914,
+    "days_to_cover": 1.34,
+    "insiders_pct": 37.427,
+    "institutions_pct": 42.673,
+    "dividend_yield": 0.0166
+  },
+  "business_exposure": {
+    "revenue_by_product": [],
+    "revenue_by_geography": [
+      {
+        "name": "Americas",
+        "share": 0.7088,
+        "revenue": 13711000000,
+        "currency": "USD",
+        "period_end": "2026-08-31",
+        "fiscal_year": 2026,
+        "period_type": "quarterly",
+        "revenue_usd": 13711000000,
+        "fiscal_period": "Q1"
+      },
+      {
+        "name": "EMEA",
+        "share": 0.1926,
+        "revenue": 3726000000,
+        "currency": "USD",
+        "period_end": "2026-08-31",
+        "fiscal_year": 2026,
+        "period_type": "quarterly",
+        "revenue_usd": 3726000000,
+        "fiscal_period": "Q1"
+      },
+      {
+        "name": "Asia Pacific",
+        "share": 0.0986,
+        "revenue": 1908000000,
+        "currency": "USD",
+        "period_end": "2026-08-31",
+        "fiscal_year": 2026,
+        "period_type": "quarterly",
+        "revenue_usd": 1908000000,
+        "fiscal_period": "Q1"
+      }
+    ]
+  },
+  "news": [
+    {
+      "id": 4921005,
+      "time_published": "2026-11-11T05:26:51.000Z",
+      "title": "How Investors May Respond To F5 (FFIV) Oracle Cloud Security Deal",
+      "summary": "F5 and Oracle have announced a collaboration to integrate F5\u2019s web application and API protection into Oracle Cloud Infrastructure, aiming to enhance security for critical workloads. This deal supports F5's security narrative, aligning with increasing demand for application layer security. Analysts predict F5's revenue to grow by 8.1% annually over the next three years, with earnings potentially reaching US$1.0 billion by 2029, driven partly by this partnership and ongoing share buybacks.",
+      "source": "Simply Wall St",
+      "source_domain": "Simply Wall St",
+      "category": "General",
+      "topics": [
+        {
+          "topic": "earnings",
+          "relevance_score": 0.944376
+        },
+        {
+          "topic": "technology",
+          "relevance_score": 0.81824
+        },
+        {
+          "topic": "financial_markets",
+          "relevance_score": 0.743769
+        }
+      ],
+      "url": "https://simplywall.st/stocks/us/software/nasdaq-ffiv/f5/news/how-investors-may-respond-to-f5-ffiv-oracle-cloud-security-d",
+      "overall_sentiment_score": 0.2691,
+      "overall_sentiment_label": "Somewhat-Bullish",
+      "relevance": 0.828748
+    },
+    {
+      "id": 4914414,
+      "time_published": "2026-11-11T01:07:53.000Z",
+      "title": "Oracle breaks ground on $4.5 billion Nashville headquarters on East Bank",
+      "summary": "Oracle has officially broken ground on its $4.5 billion global headquarters in Nashville, a project significantly larger than its initial 2021 proposal. The 80-acre development along the Cumberland River will include offices, retail, and green space, alongside a pedestrian bridge, and is expected to create thousands of direct and induced jobs. Oracle emphasizes its long-term commitment to Nashville, aiming to integrate into the community and contribute to the city's growth, with public events scheduled to showcase their vision.",
+      "source": "News Channel 5 Nashville",
+      "source_domain": "News Channel 5 Nashville",
+      "category": "General",
+      "topics": [
+        {
+          "topic": "real_estate",
+          "relevance_score": 0.904124
+        },
+        {
+          "topic": "technology",
+          "relevance_score": 0.841299
+        },
+        {
+          "topic": "economy_macro",
+          "relevance_score": 0.736846
+        }
+      ],
+      "url": "https://www.newschannel5.com/news/oracle-breaks-ground-on-4-5-billion-nashville-headquarters-on-east-bank",
+      "overall_sentiment_score": 0.5279,
+      "overall_sentiment_label": "Bullish",
+      "relevance": 1.0
+    },
+    {
+      "id": 4907838,
+      "time_published": "2026-11-10T23:08:05.000Z",
+      "title": "Licensable picture: Guests examine a three-dimensional model of Oracle Corp.'s planned 82-acre Nashville world headquarters during a groundbreaking",
+      "summary": "The article describes a photograph showing guests examining a three-dimensional model of Oracle Corp.'s planned 82-acre Nashville world headquarters. This event took place during a groundbreaking ceremony for the company in Nashville on Tuesday, November 10, 2026. The image was provided by USA TODAY Network via Reuters Connect.",
+      "source": "Reuters Connect",
+      "source_domain": "Reuters Connect",
+      "category": "General",
+      "topics": [
+        {
+          "topic": "real_estate",
+          "relevance_score": 0.84384
+        },
+        {
+          "topic": "technology",
+          "relevance_score": 0.749093
+        }
+      ],
+      "url": "https://www.reutersconnect.com/item/guests-examine-a-three-dimensional-model-of-oracle-corps-planned-82-acre-nashville-world-headquarters-during-a-groundbreaking/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzAzMjgxNTA",
+      "overall_sentiment_score": 0.299,
+      "overall_sentiment_label": "Somewhat-Bullish",
+      "relevance": 1.0
+    },
+    {
+      "id": 4913798,
+      "time_published": "2026-11-10T21:45:02.000Z",
+      "title": "Here's Why Oracle (ORCL) Fell More Than Broader Market",
+      "summary": "Oracle (ORCL) closed down 1.51% and has fallen 12.81% over the past month, underperforming the S&P 500. While the company projects strong revenue growth of 32.68% year-over-year to $21.31 billion, EPS is expected to decline 16.81% to $1.88. Oracle trades at a Forward P/E of 14.75, below its industry average, and holds a Zacks Rank of #3 (Hold) with a PEG ratio of 0.69.",
+      "source": "Zacks Investment Research",
+      "source_domain": "zacks.com",
+      "category": null,
+      "topics": [],
+      "url": "https://www.zacks.com/stock/news/3027577/here-s-why-oracle-orcl-fell-more-than-broader-market?cid=CS-ZC-FT-fundamental_analysis|yseop_template_6-3027577",
+      "overall_sentiment_score": null,
+      "overall_sentiment_label": null,
+      "relevance": 1.0
+    },
+    {
+      "id": 4931973,
+      "time_published": "2026-11-10T21:07:58.000Z",
+      "title": "Oracle Celebrates Groundbreaking on Future Global Headquarters in Nashville",
+      "summary": "Oracle has broken ground on its future global headquarters in Nashville, marking a significant investment in the city as a hub for cloud, AI, and healthcare technology. The new 78-acre campus, expected to open its first buildings in 2030, will create thousands of high-quality jobs and includes a $175 million investment in public infrastructure. This development underscores Oracle's commitment to job creation, community development, and collaborations with local academic and healthcare institutions in Tennessee.",
+      "source": "Oracle",
+      "source_domain": "Oracle",
+      "category": "General",
+      "topics": [
+        {
+          "topic": "real_estate",
+          "relevance_score": 0.843341
+        },
+        {
+          "topic": "technology",
+          "relevance_score": 0.800871
+        },
+        {
+          "topic": "life_sciences",
+          "relevance_score": 0.715896
+        },
+        {
+          "topic": "economy_fiscal",
+          "relevance_score": 0.634958
+        },
+        {
+          "topic": "finance",
+          "relevance_score": 0.630726
+        }
+      ],
+      "url": "https://www.oracle.com/news/announcement/oracle-celebrates-groundbreaking-on-future-global-headquarters-in-nashville-2026-11-10/",
+      "overall_sentiment_score": 0.8422,
+      "overall_sentiment_label": "Bullish",
+      "relevance": 1.0
+    },
+    {
+      "id": 4931721,
+      "time_published": "2026-11-10T19:33:00.000Z",
+      "title": "Oracle breaks ground on Nashville headquarters, pledges jobs and community investment",
+      "summary": "Oracle has broken ground on its new global headquarters in Nashville, a $4.5 billion riverfront development expected to create 8,500 permanent jobs by 2031. The project includes significant public infrastructure investment, such as a pedestrian bridge and public park, aimed at reshaping the city's economy and connecting to its existing health care industry. Despite prior layoffs and questions about job commitments, company leadership reaffirmed its long-term investment in Nashville.",
+      "source": "WZTV",
+      "source_domain": "WZTV",
+      "category": "General",
+      "topics": [
+        {
+          "topic": "real_estate",
+          "relevance_score": 0.808412
+        },
+        {
+          "topic": "technology",
+          "relevance_score": 0.806212
+        },
+        {
+          "topic": "economy_macro",
+          "relevance_score": 0.701387
+        },
+        {
+          "topic": "economy_fiscal",
+          "relevance_score": 0.616389
+        },
+        {
+          "topic": "life_sciences",
+          "relevance_score": 0.616623
+        }
+      ],
+      "url": "https://fox17.com/news/local/oracle-breaks-ground-on-nashville-headquarters-pledges-jobs-and-community-investment",
+      "overall_sentiment_score": 0.482,
+      "overall_sentiment_label": "Bullish",
+      "relevance": 1.0
+    },
+    {
+      "id": 4931568,
+      "time_published": "2026-11-10T18:28:00.000Z",
+      "title": "Oracle Corporation global headquarters breaks ground in Nashville",
+      "summary": "Oracle Corporation has officially broken ground on its new 82-acre global headquarters in Nashville. The ceremony was attended by key figures including Gov. Bill Lee, Nashville Mayor Freddie O\u2019Connell, and Oracle CEOs Mike Sicilia and Clay Magouyrk. The article provides numerous photos from the event, showcasing attendees examining models of the planned campus and speeches from dignitaries.",
+      "source": "The Tennessean",
+      "source_domain": "The Tennessean",
+      "category": "General",
+      "topics": [
+        {
+          "topic": "real_estate",
+          "relevance_score": 0.925794
+        },
+        {
+          "topic": "technology",
+          "relevance_score": 0.823893
+        },
+        {
+          "topic": "economy_fiscal",
+          "relevance_score": 0.624346
+        }
+      ],
+      "url": "https://www.tennessean.com/picture-gallery/news/2026/11/10/photos-from-the-oracle-global-headquarters-groundbreaking-ceremony-in-nashville/92715248007/",
+      "overall_sentiment_score": 0.5227,
+      "overall_sentiment_label": "Bullish",
+      "relevance": 1.0
+    },
+    {
+      "id": 4931177,
+      "time_published": "2026-11-10T16:38:06.000Z",
+      "title": "Steve Eisman: Oracle Could Suffer if OpenAI 'Demise' Causes US Recession",
+      "summary": "Steve Eisman, known for predicting the 2008 housing crash, believes there's a 70% chance the AI boom will end in a bear market or worse, potentially triggering a U.S. recession. He highlights that Oracle (NYSE:ORCL) could be vulnerable if OpenAI struggles, as roughly half of Oracle's $664 billion contracted backlog is tied to OpenAI. Eisman also points to excessive capital expenditure in AI infrastructure and competition from cheaper models as significant risks, while favoring companies that supply AI's \"picks and shovels\" like Nvidia (NASDAQ:NVDA) and Micron Technology (NASDAQ:MU).",
+      "source": "Benzinga",
+      "source_domain": "Benzinga",
+      "category": "General",
+      "topics": [
+        {
+          "topic": "financial_markets",
+          "relevance_score": 0.924142
+        },
+        {
+          "topic": "technology",
+          "relevance_score": 0.820582
+        },
+        {
+          "topic": "economy_macro",
+          "relevance_score": 0.708827
+        },
+        {
+          "topic": "earnings",
+          "relevance_score": 0.643541
+        }
+      ],
+      "url": "https://www.benzinga.com/markets/prediction-markets/26/11/63104820/eisman-ai-bear-market",
+      "overall_sentiment_score": 0.1191,
+      "overall_sentiment_label": "Neutral",
+      "relevance": 0.980124
+    },
+    {
+      "id": 4884564,
+      "time_published": "2026-11-10T15:23:45.000Z",
+      "title": "Oracle Stock Hovers Around the Flatline: What's Going On?",
+      "summary": "Oracle Corp. (NYSE: ORCL) shares are trading flat despite two analysts reiterating bullish ratings. Bernstein maintains an Outperform rating and a $325 price target, citing Oracle as a long-term AI winner with improved economics. KeyBanc maintains an Overweight rating and a $300 price target, highlighting election risks at the local level that could impact Oracle's OCI buildout.",
+      "source": "Benzinga",
+      "source_domain": "Benzinga",
+      "category": "General",
+      "topics": [
+        {
+          "topic": "financial_markets",
+          "relevance_score": 0.903473
+        },
+        {
+          "topic": "technology",
+          "relevance_score": 0.825748
+        },
+        {
+          "topic": "earnings",
+          "relevance_score": 0.722444
+        },
+        {
+          "topic": "ipo",
+          "relevance_score": 0.649892
+        }
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63096756/oracle-stock-hovers-around-the-flatline-whats-going-on",
+      "overall_sentiment_score": 0.2357,
+      "overall_sentiment_label": "Somewhat-Bullish",
+      "relevance": 1.0
+    },
+    {
+      "id": 4882940,
+      "time_published": "2026-11-10T14:30:02.000Z",
+      "title": "Down 40% in 2026, Is it Time to Buy Oracle Stock on the Dip?",
+      "summary": "Oracle stock has declined 40% in 2026, marking its worst year since 2001. Despite the significant drop, the company continues aggressive spending to meet strong customer demand for its services. The article examines whether this dip presents a buying opportunity for investors.",
+      "source": "The Motley Fool",
+      "source_domain": "fool.com",
+      "category": null,
+      "topics": [],
+      "url": "https://www.fool.com/investing/2026/11/10/down-40-in-2026-is-it-time-to-buy-oracle-stock-on-the-dip/?source=iedfolrf0000001",
+      "overall_sentiment_score": null,
+      "overall_sentiment_label": null,
+      "relevance": 1.0
+    }
+  ],
+  "price_asof": "2026-11-11T11:52:03.576Z",
+  "ratios_asof": "2026-11-09T00:00:00.000Z",
+  "reporting_currency": null,
+  "fundamentals_basis": null
+}

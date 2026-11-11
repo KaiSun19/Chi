@@ -1,12 +1,19 @@
-from typing import List
+from typing import List, cast
+from pprint import pprint
 
 import requests
 import os
 import json
 from dotenv import load_dotenv
 
-from classes import Filter, NewsResponse, ScanResponse, StockReport
-from utils import parse_stock_data_to_report
+from classes import Filter, NewsResponse, ScanResponse, StockReport, SummarizationGraphState, OverallGraphState
+from prompts import SUMMARY_PROMPT
+from utils import parse_stock_data_to_report, clean_state
+
+from langchain_openai import ChatOpenAI
+from langchain_anthropic import ChatAnthropic
+from langchain_core.messages import HumanMessage, SystemMessage
+from langgraph.graph import END, MessagesState, START, StateGraph
 
 SCREENER_FILTERS: List[Filter] = [
     {"field": "market_cap", "operator": ">", "value": 1e10},
@@ -73,18 +80,41 @@ def fetch_asset_info(tickers: str |List[str], api_key: str) -> dict:
     )
     return response.json()
 
+def summarize_reports(state : OverallGraphState) -> OverallGraphState:
+        
+    structured_llm = analyst_llm.with_structured_output(SummarizationGraphState)
+
+    system_message = SUMMARY_PROMPT.format(stock_report=state['stock_reports'][0])
+
+    summary = structured_llm.invoke([SystemMessage(content=system_message)]+[HumanMessage(content="Generate the summary and filtered report")])
+    
+    return {"stock_reports": state['stock_reports'], "stock_summaries" : [summary]}
+
 if __name__ == "__main__":
     load_dotenv()
 
+    analyst_llm = ChatOpenAI(model="gpt-5.6-luna", api_key=os.getenv("OPENAI_API_KEY"))
+    orchestrator_llm = ChatAnthropic(model="claude-sonnet-5-5", api_key=os.getenv("ANTHROPIC_API_KEY"))
+    allocator_llm = ChatOpenAI(model="gpt-5.6-sol", api_key=os.getenv("OPENAI_API_KEY"))
     api_key = os.getenv("TICKERBOT_API_KEY")
+    
     ticker = "ORCL"
 
-    stock_news = fetch_asset_news(ticker, api_key)
-    stock_data = fetch_asset_info(ticker, api_key)
+    with open('mock_data/stock_report.json', 'r', encoding='utf-8') as file:
+        stock_report = json.load(file)
 
-    stock_report = parse_stock_data_to_report(
-        stock_data.get('data', {}), 
-        stock_news.get('results', []), ticker
+    builder = StateGraph(OverallGraphState)
+    builder.add_node("summarize_reports", summarize_reports)
+    builder.add_edge(START, "summarize_reports")
+    builder.add_edge("summarize_reports", END)
+
+    graph = builder.compile()
+
+    thread = {"configurable": {"thread_id": "1"}}
+
+    final_state: OverallGraphState = graph.invoke(
+        {"stock_reports": [stock_report]},
+        config=thread,
     )
 
-    print(json.dumps(stock_report.model_dump(), indent=4))
+    print(final_state)

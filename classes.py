@@ -235,3 +235,26 @@ class StockReport(TickerbotModel):
     ratios_asof: str | None = None
     reporting_currency: str | None = None
     fundamentals_basis: str | None = None
+
+class FilteredStockReport(TypedDict, total=False):
+    company_profile: dict[str, Any]
+    fundamentals: dict[str, Any]
+    financial_health: dict[str, Any]
+    valuation: dict[str, Any]
+    technical_analysis: dict[str, Any]
+    earnings_and_analysts: dict[str, Any]
+    ownership_and_dividends: dict[str, Any]
+    business_exposure: dict[str, Any]
+    news: list[NewsResult]
+    price_asof: str | None
+    ratios_asof: str | None
+    reporting_currency: str | None
+    fundamentals_basis: str | None
+
+class SummarizationGraphState(TypedDict):
+    summary : str
+    filtered_report: FilteredStockReport
+
+class OverallGraphState(TypedDict):
+    stock_reports: list[StockReport] = Field(default_factory=list)
+    stock_summaries: list[SummarizationGraphState] = Field(default_factory=list)

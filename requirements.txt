@@ -1,5 +1,7 @@
 langgraph
 langchain-openai
+langchain-anthropic
 langchain-tavily
 langgraph-prebuilt
 requests
+python-dotenv
