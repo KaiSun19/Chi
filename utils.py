@@ -3,7 +3,7 @@ import os
 
 from pydantic import Field
 
-from classes import OverallGraphState, StockReport, CompanyProfile, Fundamentals, FinancialHealth, Valuation, TechnicalAnalysis, EarningsAndAnalysts, OwnershipAndDividends, BusinessExposure, NewsResult
+from classes import StockReport, CompanyProfile, Fundamentals, FinancialHealth, Valuation, TechnicalAnalysis, EarningsAndAnalysts, OwnershipAndDividends, BusinessExposure, NewsResult
 from pydantic import Field
 from typing import Any
 
@@ -59,18 +59,3 @@ def parse_stock_data_to_report(
         reporting_currency=stock_data_result.get("reporting_currency"),
         fundamentals_basis=stock_data_result.get("fundamentals_basis"),
     )
-
-def clean_state(state: OverallGraphState) -> OverallGraphState:
-    """
-    Clean the final state by concatenating token outputs from stock summaries.
-    """
-    cleaned_state = {"stock_reports": state.get("stock_reports", []), "stock_summaries": []}
-    for summary_dict in state.get("stock_summaries", []):
-        summary = summary_dict.get("summary")
-        filtered_report = summary_dict.get("filtered_report")
-        if summary:
-            cleaned_state["stock_summaries"].append({
-                "summary": " ".join(summary.split()),
-                "filtered_report": filtered_report
-            })
-    return cleaned_state

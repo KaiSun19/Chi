@@ -1,5 +1,7 @@
 from typing import Any, Literal, NotRequired, TypedDict
+from langgraph.graph import add_messages
 from pydantic import BaseModel, ConfigDict, Field, field_validator
+from typing import Annotated
 
 class ScanResult(TypedDict):
     ticker: str
@@ -258,3 +260,88 @@ class SummarizationGraphState(TypedDict):
 class OverallGraphState(TypedDict):
     stock_reports: list[StockReport] = Field(default_factory=list)
     stock_summaries: list[SummarizationGraphState] = Field(default_factory=list)
+
+class FredIndicator(TypedDict):
+    name: str
+    category: str
+    frequency: Literal["daily", "weekly", "monthly", "quarterly"]
+    description: str
+    importance: Literal["critical", "high", "medium"]
+
+class FredSeriesMetadata(TypedDict):
+    id: str
+    realtime_start: str
+    realtime_end: str
+    title: str
+    observation_start: str
+    observation_end: str
+    frequency: str
+    frequency_short: str
+    units: str
+    units_short: str
+    seasonal_adjustment: str
+    seasonal_adjustment_short: str
+    last_updated: str
+    popularity: int
+    notes: str
+
+class FredMetadataResponse(TypedDict):
+    realtime_start: str
+    realtime_end: str
+    seriess: list[FredSeriesMetadata]
+
+class FredSeriesObservation(TypedDict):
+    realtime_start: str
+    realtime_end: str
+    date: str
+    value: str
+
+class FredSeriesObservationFiltered(TypedDict):
+    date: str
+    value: str
+
+class FredIndicatorWithData(FredIndicator):
+    series_data: list[FredSeriesObservationFiltered]
+
+class FredSeriesResponse(TypedDict):
+    realtime_start: str
+    realtime_end: str
+    observation_start: str
+    observation_end: str
+    units: str
+    output_type: int
+    file_type: str
+    order_by: str
+    sort_order: str
+    count: int
+    offset: int
+    limit: int
+    observations: list[FredSeriesObservation]
+
+ConstraintOperator = Literal[
+    "<=",
+    ">=",
+    "==",
+    "in",
+    "not_in",
+]
+
+ConstraintValue = float | int | str | list[str]
+
+class PortfolioConstraint(TypedDict):
+    constraint: str
+    description: str
+    operator: ConstraintOperator
+    value: ConstraintValue
+    applied_to: list[Literal["stocks", "etfs"]]
+
+class MacroReportOutput(BaseModel):
+    macro_report: str = Field(default_factory=str, description="The macroeconomic report text")
+    portfolio_constraints: list[PortfolioConstraint] = Field(default_factory=list , description="The list of portfolio constraints")
+
+class OrchestratorGraphState(TypedDict):
+    #messages is needed to enable deferring to a tool node 
+    messages: Annotated[list, add_messages]
+    fred_series_data: dict[str , FredIndicatorWithData] = Field(default_factory=dict)
+    portfolio_constraints: list[PortfolioConstraint] = Field(default_factory=list)
+    macro_report: str = Field(default_factory=str)
